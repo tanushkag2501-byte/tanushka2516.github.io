@@ -1,22 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanushka Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            background: #020617;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #38bdf8;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #0f172a, #1e293b);
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            color: #38bdf8;
+        }
+
+        .hero p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #38bdf8;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #020617;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hi, I'm Tanushka 👋</h1>
-    <p>I am a Computer Science student interested in Machine Learning.</p>
 
+<header>
+    <h1>Tanushka Gupta</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Hi, I'm Tanushka 👋</h2>
+    <p>Machine Learning Enthusiast | Developer | Problem Solver</p>
+    <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Computer Science student passionate about Machine Learning, 
+        Data Science, and building real-world applications. I enjoy solving 
+        problems and creating impactful projects.
+    </p>
+</section>
+
+<section id="projects">
     <h2>Projects</h2>
-    <ul>
-        <li>Fake News Detection App</li>
-        <li>ML Projects</li>
-    </ul>
 
+    <div class="projects">
+        <div class="card">
+            <h3>Fake News Detection</h3>
+            <p>ML model to detect fake news using NLP techniques.</p>
+        </div>
+
+        <div class="card">
+            <h3>ML Model</h3>
+            <p>Classification model with high accuracy using hybrid techniques.</p>
+        </div>
+
+        <div class="card">
+            <h3>Web App</h3>
+            <p>Interactive web application using Flask.</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
     <h2>Skills</h2>
-    <p>Python, Machine Learning, SQL</p>
+    <p>Python | Machine Learning | SQL | HTML | CSS | Flask</p>
+</section>
 
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
+<section id="contact">
+    <h2>9009189451</h2>
+    <p>Email: tanushkag2516@gmail.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Tanushka Gupta | Portfolio</p>
+</footer>
+
 </body>
 </html>
